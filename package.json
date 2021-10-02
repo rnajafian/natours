@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/rnajafian/natours.git"
   },
-  "author": "rghye",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/rnajafian/natours/issues"
@@ -18,6 +18,5 @@
   "homepage": "https://github.com/rnajafian/natours#readme",
   "devDependencies": {
     "node-sass": "^6.0.1"
-  },
-  "dependencies": {}
+  }
 }

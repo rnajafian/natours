@@ -8,6 +8,7 @@
     border-radius: 10rem;
     transition: all 0.3s ease-out;
     position: relative;
+    font-size: $default-font-size;
   }
   &:hover {
     transform: translatey(-0.3rem);
@@ -18,7 +19,7 @@
     }
   }
   &:active {
-    transform: translateY(-1px);
+    transform: translateY(-0.1rem);
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.5);
   }
   &--white {
@@ -45,5 +46,29 @@
   &--animated {
     animation: moveinbottom 1s ease-out 0.85s;
     animation-fill-mode: backwards;
+  }
+}
+.btn-text {
+  &:link,
+  &:visited {
+    color: $primary-color;
+    display: inline-block;
+    text-decoration:none;
+    border-bottom: .1rem solid $primary-color;
+    padding: .3rem;
+    font-size: $default-font-size;
+    transition: all .2s ease-out;
+  }
+
+  &:hover {
+    background-color: $primary-color;
+    color: $color-white;
+    box-shadow: 0 1rem 2rem rgba($color-black,.15);
+    transform: translateY(-0.2rem);
+  }
+
+  &:active {
+    box-shadow: 0 .5rem 1rem rgba($color-black,.15);
+    transform: translateY(0rem);
   }
 }
