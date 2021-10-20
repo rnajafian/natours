@@ -22,11 +22,23 @@
         opacity: 0;
         transform: translate(-50%,-50%) scale(.25);
         transition: all .5s .2s;
+
+        @include respond(tab-port){
+            display: block;
+            text-align: center;
+
+        }
     }
 
     &__left{
         width: 33.333333%;
         display: table-cell;
+
+        @include respond(tab-port){
+            display: block;    
+            width: 100%;
+            overflow: hidden;
+        }
     }
 
     &__right{
@@ -34,12 +46,28 @@
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
+
+        @include respond(tab-port){
+            display: block;  
+            padding: 1.5rem 3.5rem;    
+            width: 100%;
+        }
     }
 
     &__img{
         display: block;
         width: 100%;
+        @include respond(tab-port){
+            float: left;   
+            width: 50%;
+            height: 25rem;
+        }
+
+        @include respond(phone){
+            height: 20rem;
+        }
     }
+
 
     &__text{
         font-size: 1.4rem;
@@ -57,6 +85,15 @@
         -ms-hyphens: auto;
         -webkit-hyphens: auto;
         hyphens: auto;
+
+        @include respond(tab-port){
+            display: inline-block;
+            -moz-column-count: 1;
+            column-count: 1;
+            column-gap: 0;
+            column-rule: none;
+            hyphens: none;
+        }
     }
 
 
